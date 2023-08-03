@@ -1,0 +1,229 @@
+body {
+  background: linear-gradient(0deg,#323e3a 10%,#43534c 40%,#4f615b 70%,#677d75 100%);
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+span {
+  color: white;
+}
+
+/* Define the animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  /* Apply the animation to the h1 element */
+  animation: slideIn 3s forwards; /*duration with forwards to retain the final state of the animation*/
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  font-size: 4.5rem;
+  letter-spacing: -1px;
+  margin: 50px auto 0 auto;
+}
+
+
+h2 {
+  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  color: #bfe3d7;
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  margin: auto;
+  padding-bottom: 10px;
+  text-decoration: underline 3px;
+  width: 75%;
+}
+
+h3 {
+  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  color: #EAF6F6;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+h4 {
+  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  color: #323e3a;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+p {
+  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+
+  line-height: 2;
+  color: #EAF6F6;
+  font-size: 1rem;
+}
+
+hr {
+  border: dotted #c4d9ce6b 14px;
+  border-bottom: none;
+  width: 50%;
+  margin: 100px auto 100px auto;
+}
+
+u {
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif; 
+  text-decoration: none;
+  font-size: 1.2rem;
+  background: #c4d9ce6b;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+}
+
+a:hover {
+  background: #fff;
+  color: #bfe3d7;
+}
+
+/* -------------------------------------------------------------- */
+
+
+/* This allows bar to stay hovering as you scroll */
+.navigation-bar {
+  animation: slideIn 3s forwards; /* duration with forwards to retain the final state of the animation */
+  background: #c4d9ce6b;
+  height: 50px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+
+.nav_bar_padding {
+  padding-top: 50px; /* You can adjust this value to create the desired buffer */
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 7.5px;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.chente-profile-img {
+  animation: zoomIn 2s forwards;
+  outline: 2px solid #fff!important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-me-profile {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.about-me {
+  width: 70%;
+  margin: auto;
+}
+
+.experience-row {
+  width: 60%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.my-projects {
+  width: 60%;
+  margin: 100px auto 100px auto;
+}
+
+.web-programming-img {
+  width: 25%;
+  float: right;
+  margin-right: 30px;
+}
+
+.goal-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.completed-projects {
+  align-items: center;
+  margin-left: auto;
+  border: 8px solid #717167;
+}
+
+.completed-projects:hover {
+  background: #c0ba7e;
+  color: #c0ba7e;
+  text-decoration: none;
+}
+
+.workflow-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-me {
+  margin-bottom: 80px;
+}
+
+.contact-message {
+  width: 60%;
+  margin: 40px auto 60px auto;
+}
+
+.btn {
+  background: #c4d9ce6b;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #bfe3d7;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------- */
+
+.bottom-container {
+  padding: 35px 0 15px;
+  background: #c4d9ce6b;
+  position: relative;
+}
+
+.copyright {
+  color:  #fff;
+  font-size: 1rem;
+  padding: 10px 0;
+}
