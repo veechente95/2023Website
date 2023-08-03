@@ -22,7 +22,7 @@ span {
 
 h1 {
   /* Apply the animation to the h1 element */
-  animation: slideIn 1s forwards; /* duration with forwards to retain the final state of the animation */
+  animation: slideIn 3s forwards; /*duration with forwards to retain the final state of the animation*/
   color: #fff;
   font-family: 'Merriweather', serif;
   font-size: 4.5rem;
@@ -32,40 +32,45 @@ h1 {
 
 
 h2 {
-  animation: slideIn 1.5s forwards; /* 1s duration with forwards to retain the final state of the animation */
-  color: #c0ba7e;
+  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  color: #bfe3d7;
   font-family: 'Merriweather', serif;
   font-size: 3rem;
   letter-spacing: 0px;
   margin: auto;
   padding-bottom: 10px;
+  text-decoration: underline 3px;
   width: 75%;
 }
 
 h3 {
+  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
   color: #EAF6F6;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
 }
 
-h4{
+h4 {
+  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
   color: #323e3a;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
 
 p {
+  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+
   line-height: 2;
   color: #EAF6F6;
   font-size: 1rem;
 }
 
 hr {
-  border: dotted #fff 4px;
+  border: dotted #c4d9ce6b 14px;
   border-bottom: none;
-  width: 75%;
-  margin: 50px auto 50px auto;
+  width: 50%;
+  margin: 100px auto 100px auto;
 }
 
 u {
@@ -90,7 +95,7 @@ a {
 
 a:hover {
   background: #fff;
-  color: #c0ba7e;
+  color: #bfe3d7;
 }
 
 /* -------------------------------------------------------------- */
@@ -98,21 +103,36 @@ a:hover {
 
 /* This allows bar to stay hovering as you scroll */
 .navigation-bar {
-  background: #c4d9ce20;
-  height: 40px;
+  animation: slideIn 3s forwards; /* duration with forwards to retain the final state of the animation */
+  background: #c4d9ce6b;
+  height: 50px;
   position: sticky;
   top: 0px;
   width: 100%;
 }
 
+.nav_bar_padding {
+  padding-top: 50px; /* You can adjust this value to create the desired buffer */
+}
+
 .header {
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  padding-top: 7.5px;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .chente-profile-img {
-  animation: slideIn 1s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  animation: zoomIn 2s forwards;
   outline: 2px solid #fff!important;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -124,7 +144,7 @@ a:hover {
 }
 
 .about-me {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -190,7 +210,7 @@ a:hover {
 
 .btn:hover {
   background: #fff;
-  color: #c0ba7e;
+  color: #bfe3d7;
   text-decoration: none;
 }
 
