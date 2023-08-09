@@ -52,7 +52,7 @@ h3 {
 }
 
 h4 {
-  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  animation: slideIn 8s forwards; /* 1s duration with forwards to retain the final state of the animation */
   color: #323e3a;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
@@ -60,10 +60,9 @@ h4 {
 
 p {
   animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
-
   line-height: 2;
   color: #EAF6F6;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 hr {
@@ -148,27 +147,62 @@ a:hover {
   margin: auto;
 }
 
-.experience-row {
+
+
+.embracing-vulnerability-block {
   width: 60%;
   margin: 100px auto 100px auto;
   text-align: left;
+  margin-bottom: 50px;
 }
+
+.web-programming-img {
+  width: 22%;
+  float: right;
+  margin-right: 5%;
+}
+
+.my-goal-block {
+  width: 60%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.goal-img {
+  width: 22%;
+  float: left;
+  margin-right: 5%;
+}
+
+
+
+.experience-block {
+  width: 70%;
+  margin: 0px auto 100px auto;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.green-tech-img {
+  width: 10%;
+  float: right;
+  margin-right: 5%;
+}
+
+.data-science-img {
+  width: 10%;
+  float: right;
+  margin-right: 5%;
+}
+
+
+
+
 
 .my-projects {
   width: 60%;
   margin: 100px auto 100px auto;
-}
-
-.web-programming-img {
-  width: 25%;
-  float: right;
-  margin-right: 30px;
-}
-
-.goal-img {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
 }
 
 .completed-projects {
