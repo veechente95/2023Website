@@ -10,7 +10,6 @@ span {
   color: white;
 }
 
-/* Define the animation */
 @keyframes slideIn {
   0% {
     transform: translateY(-100%);
@@ -20,9 +19,29 @@ span {
   }
 }
 
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with fully transparent */
+  }
+  to {
+    opacity: 1; /* Fade to fully visible */
+  }
+}
+
+
+
 h1 {
-  /* Apply the animation to the h1 element */
-  animation: slideIn 3s forwards; /*duration with forwards to retain the final state of the animation*/
+  opacity: 0;
+  animation: fadeIn 3s forwards, slideIn 3s;
   color: #fff;
   font-family: 'Merriweather', serif;
   font-size: 4.5rem;
@@ -32,7 +51,7 @@ h1 {
 
 
 h2 {
-  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  animation: fadeIn 3s forwards, slideIn 3s;
   color: #bfe3d7;
   font-family: 'Merriweather', serif;
   font-size: 3rem;
@@ -44,7 +63,7 @@ h2 {
 }
 
 h3 {
-  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  animation: fadeIn 3s forwards, slideIn 3s;
   color: #EAF6F6;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
@@ -52,20 +71,21 @@ h3 {
 }
 
 h4 {
-  animation: slideIn 8s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  animation: fadeIn 3s forwards, slideIn 3s;
   color: #323e3a;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
 
 p {
-  animation: slideIn 3s forwards; /* 1s duration with forwards to retain the final state of the animation */
+  animation: fadeIn 3s forwards, slideIn 3s;
   line-height: 2;
   color: #EAF6F6;
   font-size: 0.85rem;
 }
 
 hr {
+  animation: fadeIn 3s forwards, slideIn 3s;
   border: dotted #c4d9ce6b 14px;
   border-bottom: none;
   width: 50%;
@@ -86,7 +106,7 @@ a {
   text-decoration: none;
   font-size: 1.2rem;
   background: #c4d9ce6b;
-  border-radius: 8px;
+  border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   padding: 5px 10px 5px 10px;
@@ -121,17 +141,8 @@ a:hover {
   padding-top: 7.5px;
 }
 
-@keyframes zoomIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .chente-profile-img {
-  animation: zoomIn 2s forwards;
+  animation: fadeIn 3s forwards, slideIn 1.5s;
   outline: 2px solid #fff!important;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -157,6 +168,7 @@ a:hover {
 }
 
 .web-programming-img {
+  animation: fadeIn 3s forwards, slideIn 3s;
   width: 22%;
   float: right;
   margin-right: 5%;
@@ -170,6 +182,7 @@ a:hover {
 }
 
 .goal-img {
+  animation: fadeIn 3s forwards, slideIn 3s;
   width: 22%;
   float: left;
   margin-right: 5%;
@@ -184,17 +197,13 @@ a:hover {
   margin-bottom: 50px;
 }
 
-.green-tech-img {
+.experience-images {
+  animation: fadeIn 3s forwards, slideIn 3s;
   width: 10%;
   float: right;
   margin-right: 5%;
 }
 
-.data-science-img {
-  width: 10%;
-  float: right;
-  margin-right: 5%;
-}
 
 
 
@@ -233,6 +242,7 @@ a:hover {
 }
 
 .btn {
+  animation: fadeIn 3s forwards, slideIn 3s;
   background: #c4d9ce6b;
   border-radius: 6px;
   font-family: 'Montserrat', sans-serif;
@@ -251,9 +261,14 @@ a:hover {
 /* -------------------------------------------------------------- */
 
 .bottom-container {
+  animation: fadeIn 3s forwards, slideIn 3s;
   padding: 35px 0 15px;
   background: #c4d9ce6b;
   position: relative;
+}
+
+.contact-me {
+  animation: fadeIn 3s forwards, slideIn 3s;
 }
 
 .copyright {
