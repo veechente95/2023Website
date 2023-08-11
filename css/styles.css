@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(0deg,#323e3a 10%,#43534c 40%,#4f615b 70%,#677d75 100%);
+  background: linear-gradient(0deg, #323e3a 10%, #43534c 40%, #4f615b 70%, #677d75 100%);
   position: relative;
   margin: 0;
   text-align: center;
@@ -37,33 +37,28 @@ span {
   }
 }
 
-
-
-h1 {
-  opacity: 0;
+h1, h2, h3, h4, p, hr, u {
   animation: fadeIn 3s forwards, slideIn 3s;
-  color: #fff;
-  font-family: 'Merriweather', serif;
-  font-size: 4.5rem;
-  letter-spacing: -1px;
-  margin: 50px auto 0 auto;
 }
 
+h1 {
+  color: #fff;
+  font-size: 4.5rem;
+  letter-spacing: -1px;
+  margin: 50px auto 0;
+}
 
 h2 {
-  animation: fadeIn 3s forwards, slideIn 3s;
   color: #dbcbc1;
-  font-family: 'Merriweather', serif;
   font-size: 3rem;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   margin: auto;
   padding-bottom: 10px;
-  text-decoration: underline 3px;
+  text-decoration: underline;
   width: 75%;
 }
 
 h3 {
-  animation: fadeIn 3s forwards, slideIn 3s;
   color: #EAF6F6;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
@@ -71,25 +66,22 @@ h3 {
 }
 
 h4 {
-  animation: fadeIn 3s forwards, slideIn 3s;
   color: #323e3a;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
 
 p {
-  animation: fadeIn 3s forwards, slideIn 3s;
   line-height: 2;
   color: #EAF6F6;
   font-size: 0.85rem;
 }
 
 hr {
-  animation: fadeIn 3s forwards, slideIn 3s;
   border: dotted #c4d9ce6b 14px;
   border-bottom: none;
   width: 50%;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
 }
 
 u {
@@ -107,31 +99,27 @@ a {
   font-size: 1.4rem;
   background: #c4d9ce6b;
   border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
 }
 
 a:hover {
   background: #fff;
   color: #e3c6bf;
+  text-decoration: none;
 }
 
-/* -------------------------------------------------------------- */
-
-
-/* This allows bar to stay hovering as you scroll */
 .navigation-bar {
-  animation: slideIn 3s forwards; /* duration with forwards to retain the final state of the animation */
+  animation: slideIn 3s forwards;
   background: #c4d9ce6b;
   height: 50px;
   position: sticky;
-  top: 0px;
+  top: 0;
   width: 100%;
+  z-index: 1000; /* Nav bar overlaps other elements */
 }
 
 .nav_bar_padding {
-  padding-top: 50px; /* You can adjust this value to create the desired buffer */
+  padding-top: 50px;
 }
 
 .header {
@@ -157,41 +145,28 @@ a:hover {
   margin: auto;
 }
 
-
-
-.embracing-vulnerability-block {
+.embracing-vulnerability-block, .my-goal-block {
   width: 60%;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
   text-align: left;
   margin-bottom: 50px;
 }
 
-.web-programming-img {
-  animation: fadeIn 3s forwards, slideIn 3s;
-  width: 22%;
-  float: right;
-  margin-right: 5%;
-}
-
-.my-goal-block {
-  width: 60%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-  margin-bottom: 50px;
-}
-
-.goal-img {
+.web-programming-img, .goal-img {
   animation: fadeIn 3s forwards, slideIn 3s;
   width: 22%;
   float: left;
   margin-right: 5%;
 }
 
-
+.my-projects {
+  width: 60%;
+  margin: 50px auto;
+}
 
 .experience-block {
   width: 70%;
-  margin: 0px auto 100px auto;
+  margin: 0 auto 100px;
   text-align: left;
   margin-bottom: 50px;
 }
@@ -201,16 +176,6 @@ a:hover {
   width: 10%;
   float: right;
   margin-right: 5%;
-}
-
-
-
-
-
-
-.my-projects {
-  width: 60%;
-  margin: 50px auto 50px auto;
 }
 
 .completed-projects {
@@ -225,18 +190,13 @@ a:hover {
   text-decoration: none;
 }
 
-
-
-
-
-
 .contact-me {
   margin-bottom: 80px;
 }
 
 .contact-message {
   width: 60%;
-  margin: 40px auto 60px auto;
+  margin: 40px auto 60px;
 }
 
 .btn {
@@ -246,7 +206,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
@@ -255,8 +215,6 @@ a:hover {
   color: #e3c6bf;
   text-decoration: none;
 }
-
-/* -------------------------------------------------------------- */
 
 .bottom-container {
   animation: fadeIn 3s forwards, slideIn 3s;
@@ -269,9 +227,14 @@ a:hover {
   animation: fadeIn 3s forwards, slideIn 3s;
 }
 
-.copyright {
-  color:  #fff;
-  font-size: 1rem;
-  padding: 10px 0;
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 20px;
+}
+
+.footer-link:last-child {
+  margin-right: 0;
 }
 
