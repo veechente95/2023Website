@@ -52,7 +52,7 @@ h1 {
 
 h2 {
   animation: fadeIn 3s forwards, slideIn 3s;
-  color: #bfe3d7;
+  color: #dbcbc1;
   font-family: 'Merriweather', serif;
   font-size: 3rem;
   letter-spacing: 0px;
@@ -104,7 +104,7 @@ a {
   color: #fff;
   font-family: 'Montserrat', sans-serif; 
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background: #c4d9ce6b;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -114,7 +114,7 @@ a {
 
 a:hover {
   background: #fff;
-  color: #bfe3d7;
+  color: #e3c6bf;
 }
 
 /* -------------------------------------------------------------- */
@@ -143,9 +143,8 @@ a:hover {
 
 .chente-profile-img {
   animation: fadeIn 3s forwards, slideIn 1.5s;
-  outline: 2px solid #fff!important;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  outline: 30px solid #fff;
+  margin-top: 50px;
 }
 
 .about-me-profile {
@@ -211,26 +210,25 @@ a:hover {
 
 .my-projects {
   width: 60%;
-  margin: 100px auto 100px auto;
+  margin: 50px auto 50px auto;
 }
 
 .completed-projects {
-  align-items: center;
+  align-items: auto;
   margin-left: auto;
   border: 8px solid #717167;
 }
 
 .completed-projects:hover {
-  background: #c0ba7e;
+  background: #bdbcb0;
   color: #c0ba7e;
   text-decoration: none;
 }
 
-.workflow-img {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
-}
+
+
+
+
 
 .contact-me {
   margin-bottom: 80px;
@@ -252,9 +250,9 @@ a:hover {
   text-decoration: none;
 }
 
-.btn:hover {
+.contact-btn:hover {
   background: #fff;
-  color: #bfe3d7;
+  color: #e3c6bf;
   text-decoration: none;
 }
 
