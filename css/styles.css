@@ -10,6 +10,17 @@ span {
   color: white;
 }
 
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes slideIn {
   0% {
     transform: translateY(-100%);
@@ -37,8 +48,10 @@ span {
   }
 }
 
-h1, h2, h3, h4, p, hr, u {
+h1, h2, h3, h4, p, hr, u, .chente-profile-img, .experience-images, .completed-projects {
+  animation: fadeSlideIn 3s forwards;
   animation: fadeIn 3s forwards, slideIn 3s;
+
 }
 
 h1 {
