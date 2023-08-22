@@ -28,22 +28,22 @@
     <img class="chente-profile-img" src="images/LinkedInProfilePic.png" alt="portrait2-img" height="400px" width="300px">
   </section>
 
-  <div class="about-me-profile">
+  <div class="about-me-profile fade-in">
     <section id="about" class="nav_bar_padding">
       <h2>About Me</h2>
-      <p class="about-me">Hey, thanks for visiting my website! My name is Vicente Ceja (he/him)
+      <p class="about-me fade-in">Hey, thanks for visiting my website! My name is Vicente Ceja (he/him)
         from Boyle Heights, California. I'm a self-taught python developer seeking to launch a career
         in the world of tech. I graduated from UCLA back in 2018 with a B.A in Geospatial Information Systems & Technologies (GIS&T) and have a background working with spatial analysis, data management & engineering and software development. In my freetime I love to code, cook, record music, workout, and bake cookies (hence the little cookie favicon above on your browser tab 🍪).
       </p>
 
-      <div class="embracing-vulnerability-block">
+      <div class="embracing-vulnerability-block fade-in">
         <img class="web-programming-img" src="images/computer.png" alt="computer-img">
         <h3>Embracing Vulnerability: My Journey into the World of Tech and Code</h3>
         <p>I have always been fascinated by the world of tech but was clueless as to where to start and sometimes felt like I was never good enough. However, I learned to accept the vulnerability and excitement to start again, stretch my limits, and teach myself how to code.
         </p>
       </div>
 
-      <div class="my-goal-block">
+      <div class="my-goal-block fade-in">
         <img class="goal-img" src="images/milestone.png" alt="milestone-img">
         <h3>My Goal</h3>
         <p>As a first generation Mexican-American, I acknowledge the lack of
@@ -58,9 +58,9 @@
 
   <hr>
 
-  <div class="my-experience">
+  <div class="my-experience fade-in">
     <section id="experience" class="nav_bar_padding">
-      <h2>My Experience</h2>
+      <h2 class="fade-in"> My Experience</h2>
       <div class="experience-block">
         <img class="experience-images" src="images/greentech.png" alt="green-tech-img">
         <h3><a href="https://laincubator.org/">Green Jobs Fellow - Los Angeles Cleantech Incubator (Aug - Oct 2023)</a></h3>
@@ -86,7 +86,7 @@
 
   <hr>
 
-  <div class="my-projects">
+  <div class="my-projects fade-in">
     <section id="projects" class="nav_bar_padding">
       <h2>My Projects</h2>
       <div class="projects-row">
@@ -111,7 +111,7 @@
 
   <hr>
 
-  <div class="contact-me">
+  <div class="contact-me fade-in">
     <section id="contact" class="nav_bar_padding">
       <h2>Get In Touch</h2>
       <p class="contact-message">If you love to code, play music, bake or cook, let's connect!
@@ -129,6 +129,25 @@
       <p class="copyright">© 2023 Vicente Ceja.</p>
     </section>
   </div>
+
+  <script>const elements = document.querySelectorAll('.fade-in');
+
+    function checkFade() {
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+    
+        if (rect.top <= windowHeight * 0.75) {
+          element.classList.add('active');
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', checkFade);
+    window.addEventListener('resize', checkFade);
+    document.addEventListener('DOMContentLoaded', checkFade);
+    </script>
+  
 </body>
 
 </html>
