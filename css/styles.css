@@ -10,6 +10,19 @@ span {
   color: white;
 }
 
+/* Fades in text */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Fades in text */
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
@@ -51,7 +64,6 @@ span {
 h1, h2, h3, h4, p, hr, u, .chente-profile-img, .experience-images, .completed-projects {
   animation: fadeSlideIn 3s forwards;
   animation: fadeIn 3s forwards, slideIn 3s;
-
 }
 
 h1 {
