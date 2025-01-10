@@ -1,7 +1,6 @@
 body {
-  background: linear-gradient(0deg, #323e3a 10%, #43534c 40%, #4f615b 70%, #677d75 100%);
+  background: linear-gradient(0deg, #323e3a 10%, #43534c 40%, #4f615b 60%, #677d75 100%);
   position: relative;
-  margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
 }
@@ -99,7 +98,7 @@ h4 {
 p {
   line-height: 2;
   color: #EAF6F6;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
 }
 
 hr {
@@ -135,9 +134,9 @@ a:hover {
 
 .navigation-bar {
   animation: slideIn 3s forwards;
-  background: #c4d9ce6b;
+  background: #e7ecea6b;
   height: 50px;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   width: 100%;
   z-index: 1000; /* Nav bar overlaps other elements */
@@ -156,9 +155,13 @@ a:hover {
 
 .chente-profile-img {
   animation: fadeIn 3s forwards, slideIn 1.5s;
-  outline: 30px solid #fff;
-  margin-top: 50px;
+  outline: 5px solid #fff;
+  margin-top: 20px;
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
 }
+
 
 .about-me-profile {
   margin-bottom: 50px;
